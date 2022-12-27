@@ -8,8 +8,10 @@ namespace AddressBook
 {
     internal class Person
     {
+        public static List<Contact> person = new List<Contact>();
         internal static void CreateContacts()
         {
+           
             Contact contact = new Contact();
             Console.WriteLine("Enter First Name :");
             contact.firstname = Console.ReadLine();
@@ -34,6 +36,8 @@ namespace AddressBook
 
             Console.WriteLine("Enter email :");
             contact.email = Console.ReadLine();
+
+            person.Add(contact);
         }
 
     }
