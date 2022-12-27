@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Addressbook
+namespace AddressBook
 {
     public class Program
     {
@@ -14,6 +14,7 @@ namespace Addressbook
             Console.WriteLine("      'Welcome to Address Book program'");
             Console.WriteLine("\n");
             AddressBook.Person.CreateContacts();
+            AddressBook.Person.editContact();
         }
     }
 }
