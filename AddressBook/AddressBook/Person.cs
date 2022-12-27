@@ -14,7 +14,7 @@ namespace AddressBook
         {
 
             Contact contact = new Contact();
-            for (int i = 1; i < times; times++)
+            for (int i = 1; i < times; i++)
             {
 
                 Console.WriteLine("Enter First Name :");
