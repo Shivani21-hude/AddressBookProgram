@@ -13,7 +13,7 @@ namespace AddressBook
         {
             Console.WriteLine("      'Welcome to Address Book program'");
             Console.WriteLine("\n");
-            AddressBook.Person.CreateContacts();
+            AddressBook.Person.CreateContacts(3);
             AddressBook.Person.editContact();
             AddressBook.Person.DeleteContact();
            
