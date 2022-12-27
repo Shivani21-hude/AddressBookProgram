@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Versioning;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -41,7 +42,7 @@ namespace AddressBook
         }
 
         //Edit contact details
-
+        
         public static void editContact()
         {
             Console.WriteLine("Enter the First Name: ");
@@ -52,9 +53,9 @@ namespace AddressBook
                 {
                     if (data.firstname == name)
                     {
-                        Console.WriteLine("To edit contacts enter 1.FirstName\n 2.LastName\n 3.Address\n 4.City\n 5.State\n 6.Zipcode\n 7.PhoneNumber\n");
-                        int option = Convert.ToInt32(Console.ReadLine());
-
+                       Console.WriteLine("To edit contacts enter 1.FirstName\n 2.LastName\n 3.Address\n 4.City\n 5.State\n 6.Zipcode\n 7.PhoneNumber\n");
+                        int option =  Convert.ToInt32(Console.ReadLine());
+                      
                         switch (option)
                         {
                             case 1:
@@ -104,6 +105,31 @@ namespace AddressBook
                 }
             }
         }
+        
+      //if name of person will match the first one then it will delete
+        public static void DeleteContact()
+        {
+            Contact contacts = new Contact();
+            Console.WriteLine("Enter FirstName of paerson whose contact deleted ");
+            string name = Console.ReadLine();
+            foreach (var data in person)
+            {
+                if (person.Contains(data))
+                {
+                    if (data.firstname == name)
+                    {
+                            person.Remove(contacts);
+                            Console.WriteLine("Contact is remove");
+                        
+                    }
+                    else
 
+                    {
+                        Console.WriteLine("Contact is not present");
+                    }
+                }
+
+            }
+        }
     }
 }

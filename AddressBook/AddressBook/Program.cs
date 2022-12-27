@@ -15,6 +15,9 @@ namespace AddressBook
             Console.WriteLine("\n");
             AddressBook.Person.CreateContacts();
             AddressBook.Person.editContact();
+            AddressBook.Person.DeleteContact();
+           
         }
     }
+    
 }
